@@ -29,9 +29,13 @@
 		`<p>Sarah was not here</p>`
 		];
 
-		var idx = Math.floor(Math.random() * messages.length);
+		var d = new Date();
+		var n = d.getMinutes();
 
-		var message = messages[idx];
+		var isOdd = n % 2
+		//var idx = Math.floor(Math.random() * messages.length);
+
+		var message = messages[isOdd];
 
 		$('#alert-container').html(message);
 	</script>
