@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Log In</title>
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="random.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+	<div class="container-fluid" style="padding-top: 20px;">
+		<div id="logo">
+			<img src="pd_logo.png" width="260" vspace="30">
+		</div>
+		<div id="alert-container"></div>
+		
+	</div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="random.js"></script>
+	<script>
+		var messages = [
+		`<p>Sarah was here</p>`,
+		`<p>Sarah was not here</p>`
+		];
+
+		var idx = Math.floor(Math.random() * messages.length);
+
+		var message = messages[idx];
+
+		$('#alert-container').html(message);
+	</script>
+<!-- 	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script> -->
+</body>
+
+</html>
